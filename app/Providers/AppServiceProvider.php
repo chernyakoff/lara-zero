@@ -14,7 +14,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
     }
 
     /**
@@ -24,8 +23,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
         $this->app->singleton(PhoneNumberUtil::class, function ($app) {
             return  PhoneNumberUtil::getInstance();
         });
+
     }
 }

@@ -17,7 +17,6 @@
     ],
     "require": {
         "php": "^8.0",
-        "danog/madelineproto": "^7",
         "giggsey/libphonenumber-for-php": "^8.13",
         "illuminate/database": "^9.0",
         "illuminate/log": "^9.0",
@@ -53,5 +52,5 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "bin": ["telegram"]
+    "bin": ["zero"]
 }

@@ -9,41 +9,6 @@ use League\Csv\Reader;
 use League\Csv\Statement;
 use libphonenumber\PhoneNumberUtil;
 use App\Models\User;
-/*
-
-
-
-function parsePhone($phone)
-{
-	global $phoneUtil;
-	try {
-		$info = $phoneUtil->parse($phone, "RU");
-		if ($phoneUtil->isValidNumber($info)) {
-			return $phoneUtil->format($info, \libphonenumber\PhoneNumberFormat::E164);
-		} else {
-			return false;
-		}
-	} catch (\libphonenumber\NumberParseException $e) {
-		return false;
-	}
-}
-
-$csv = Reader::createFromPath('./leads.csv', 'r');
-$csv->setHeaderOffset(0); //set the CSV header offset
-$csv->setDelimiter(';');
-
-
-$records = Statement::create()->process($csv);
-$phones = [];
-foreach ($records->getRecords() as $record) {
-	$phones = array_merge($phones, fetchPhones($record));
-}
-
-foreach ($phones as $phone) {
-
-
-}
-*/
 
 class UsersLoad extends Command
 {
